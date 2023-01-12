@@ -72,19 +72,19 @@ function whichMonths(season: string): string {
     return monthsInSeason;
 }
 
-console.log(whichMonths("Fall"));
+console.log(whichMonths(Season.Summer));
 
 /* EXERCISE 4
    TODO: Declare the array as the type to match the type of the items in the array. */
 
-/*    let randomNumbers;
-   let nextNumber;
+   let randomNumbers: number[] = [];
+   let nextNumber: number;
    
    for (let i = 0; i < 10; i++) {
        nextNumber = Math.floor(Math.random() * (100 - 1)) + 1;
        randomNumbers.push(nextNumber);
    }
    
-   console.log(randomNumbers); */
+   console.log(randomNumbers);
 
    
