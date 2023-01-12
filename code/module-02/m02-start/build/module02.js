@@ -36,12 +36,18 @@ console.log(a);
    the constants "Fall", "Winter", "Spring", and "Summer". Then, update the function so
    you can pass in the season by referencing an item in the enum, for example
    Season.Fall, instead of the literal string "Fall". */
+/* enum Season {
+    Fall = 'Fall',
+    Winter = 'Winter',
+    Spring = 'Spring',
+    Summer = 'Summer'
+} */
 var Season;
 (function (Season) {
-    Season["Fall"] = "Fall";
-    Season["Winter"] = "Winter";
-    Season["Spring"] = "Spring";
-    Season["Summer"] = "Summer";
+    Season[Season["Fall"] = 0] = "Fall";
+    Season[Season["Winter"] = 1] = "Winter";
+    Season[Season["Spring"] = 2] = "Spring";
+    Season[Season["Summer"] = 3] = "Summer";
 })(Season || (Season = {}));
 function whichMonths(season) {
     let monthsInSeason = '';

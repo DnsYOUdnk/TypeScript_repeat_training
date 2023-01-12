@@ -44,14 +44,21 @@ console.log(a);
    you can pass in the season by referencing an item in the enum, for example 
    Season.Fall, instead of the literal string "Fall". */
 
-enum Season {
+/* enum Season {
     Fall = 'Fall',
     Winter = 'Winter',
     Spring = 'Spring',
     Summer = 'Summer'
+} */
+
+enum Season {
+    Fall,
+    Winter,
+    Spring,
+    Summer
 }
 
-function whichMonths(season: string): string {
+function whichMonths(season: Season): string {
 
     let monthsInSeason: string = '';
 
