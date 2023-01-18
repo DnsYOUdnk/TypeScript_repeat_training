@@ -1,7 +1,4 @@
-/*  Module 8: Organize code using TypeScript namespaces
-    Lab Start */
-/*  TODO Create LoanPrograms namespace. */
-/*  TODO Update the calculateInterestOnlyLoanPayment function. */
+/// <reference path="module08_loans.ts" />
 var LoanPrograms;
 (function (LoanPrograms) {
     /*  TODO Update the calculateInterestOnlyLoanPayment function. */
@@ -25,8 +22,8 @@ var LoanPrograms;
         return interest;
     }
 })(LoanPrograms || (LoanPrograms = {}));
-/*  TODO Add reference paths. */
-/*  TODO Update the function calls. */
+/// <reference path="module08_loans.ts" />
+/// <reference path="module08_loan-programs.ts" />
 var interestOnlyPayment = LoanPrograms.calculateInterestOnlyLoanPayment({ principle: 30000, interestRate: 5 });
 var conventionalLoanPayment = LoanPrograms.calculateConventionalLoanPayment({ principle: 30000, interestRate: 5, numberOfMonths: 180 });
 console.log(interestOnlyPayment); //* Returns "The interest only loan payment is 125.00" 
